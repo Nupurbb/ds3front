@@ -95,62 +95,13 @@ title: Pulse
     }
     /* Add styles for buttons */
     button {
-        background-color: #ff66cc; /* Pink background color */
+        background-color: #f5aeb6; /* Pink background color */
         color: white;
         padding: 10px 15px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
-    /* Style the edit and delete buttons in the table */
-    #PulseTable button {
-        background-color: #ff3399; /* Dark pink background color */
-        color: white;
-        padding: 5px 10px;
-        margin: 2px;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-    }
-</style>
-
-<style>
-	.modal-backdrop {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(255, 192, 203, 0.7); /* Light pink background color */
-		z-index: 1;
-	}
-
-	.modal-content {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background: #ff66cc; /* Pink background color */
-		padding: 40px;
-		z-index: 2;
-	}
-
-	.close-modal {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		cursor: pointer;
-		background: none;
-		border: none;
-		font-size: 24px;
-		color: white;
-	}
-
-	.wrapper,
-	section {
-		max-width: 900px;
-	}
 </style>
 
 <script type="module">
@@ -334,17 +285,6 @@ title: Pulse
 </script>
 
 <style>
-/* Add styles for markdown content */
-body {
-    background-color: #ffe6f2; /* Light pink background color */
-    font-family: Arial, sans-serif; /* Set your preferred font */
-    color: #661a33; /* Dark pink text color */
-}
-
-/* Style the headers */
-h1, h2, h3 {
-    color: #ff66cc; /* Dark pink header color */
-}
 
 /* Style the bullet points */
 ul {
@@ -355,7 +295,7 @@ ul {
 /* Style the list items */
 li::before {
     content: "•";
-    color: #ff66cc; /* Dark pink bullet color */
+    color: #f5aeb6; /* Dark pink bullet color */
     font-weight: bold;
     display: inline-block;
     width: 1em;

@@ -24,14 +24,6 @@ title: Fitness
         font-family: Arial, sans-serif; /* Set your preferred font */
     }
     /* Adjust the modal styles */
-    .modal-backdrop {
-        /* ... (existing styles) ... */
-    }
-    .modal-content {
-        /* ... (existing styles) ... */
-        color: white; /* Set the text color inside the modal */
-    }
-    /* Add styles for form labels */
     form label {
         font-weight: bold;
         margin-bottom: 5px;
@@ -60,42 +52,6 @@ title: Fitness
         font-family: 'Arial', sans-serif;
         margin: 20px;
     }
-	.modal-backdrop {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.7);
-		z-index: 1;
-	}
-
-	.modal-content {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background: #272726;
-		padding: 40px;
-		z-index: 2;
-	}
-
-	.close-modal {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		cursor: pointer;
-		background: none;
-		border: none;
-		font-size: 24px;
-		color: white;
-	}
-
-	.wrapper,
-	section {
-		max-width: 900px;
-	}
 </style>
 
 <body>
