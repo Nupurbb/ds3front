@@ -67,7 +67,7 @@ title: Drink
     /* Add styles for the background */
     body {
         background-color: #e0e0e0; /* Set your desired background color */
-        font-family: Arial, sans-serif; /* Set your preferred font */
+        font-family: Comic Sans MS, cursive; /* Set your preferred font */
     }
     /* Adjust the modal styles */
     .modal-backdrop {
@@ -336,3 +336,66 @@ title: Drink
 
 
 ### On average, a woman should eat 2000 calories per day to maintain her weight, and she should limit her caloric intake to 1500 or less in order to lose one pound per week. For the average male to maintain his body weight, he should eat 2500 calories per day, or 2000 a day if he wants to lose one pound per week.
+
+<style>
+    /* Reset default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background image for the entire page */
+body {
+    background-image: url('https://github.com/Nupurbb/ds3front/assets/142522690/289e8115-7192-4344-a677-f1ad796eac8b');
+ 
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the content area */
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+/* Adjust styles for form labels */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Adjust styles for buttons */
+button {
+    background-color: #e75480; /* Dark pink background color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the edit and delete buttons in the table */
+#DrinkTable button {
+    background-color: #2196F3; /* Blue background color */
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Ignore certain elements or classes */
+body :not(.content) {
+    /* Add styles here for elements other than .content */
+}
+
+/* Ignore specific elements */
+body :not(h1, p) {
+    /* Add styles here for elements other than h1 and p */
+}
