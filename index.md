@@ -10,21 +10,37 @@ title: Login
     <title>Login</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fce4ec; /* Light pink background */
-            color: #333; /* Dark text color */
+            background-color: #FAE5DE;
         }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff; /* White container background */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        h1 {
             text-align: center;
+            color: #945C5D;
         }
-        input[type="text"],
-        input[type="password"],
+        .conta {
+            background-color: #D69092;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            color: #945C5D;
+            margin-bottom: 8px;
+        }
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
         button {
             padding: 10px; /* Add padding to inputs and button */
             margin: 5px; /* Add margin to inputs and button */
@@ -32,13 +48,13 @@ title: Login
             border: none; /* Remove default border */
         }
         button {
-            background-color: #ff4081; /* Pink button background */
+            background-color: #f5aeb6; /* Pink button background */
             color: #fff; /* White button text color */
             cursor: pointer; /* Change cursor to pointer on hover */
             transition: background-color 0.3s ease;
         }
         button:hover {
-            background-color: #ff80ab; /* Lighter pink on hover */
+            background-color: #f5aeb6; /* Lighter pink on hover */
         }
         a {
             color: #ff4081; /* Set link color to pink */
@@ -100,4 +116,20 @@ title: Login
 
 </script>
 
+<script src="{{site.baseurl}}/assets/js/three.r134.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.clouds.min.js"></script>
+<script>
+    VANTA.CLOUDS ({
+        el: "#animation",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        skyColor: 0xf9d1d1,
+        cloudColor: 0xbba2a8,
+        cloudShadowColor: 0x905167,
+        sunColor: 0x845d66,
+        sunGlareColor: 0x5e2610,
+        speed: 0.80
+    });
+</script>
 </html>

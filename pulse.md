@@ -51,9 +51,9 @@ title: Pulse
 	<div id="editModal" class="modal-content">
 		<button id="closeModal" class="close-modal">X</button>
 		<form id="editForm">
-			<label for="editActive";">Pulse Number</label><br />
+			<label for="editActive">Pulse Number</label><br />
 			<input type="text" id="editActive" name="editActive"><br />
-            <label for="editExercise";">Exercise</label><br />
+            <label for="editExercise">Exercise</label><br />
 			<input type="text" id="editExercise" name="editExercise"><br />
 			<input type="submit" value="Update">
 		</form>
@@ -79,14 +79,6 @@ title: Pulse
         background-color: #FAE5DE; /* Light pink background color */
         font-family: Arial, sans-serif; /* Set your preferred font */
         text-align: center
-    }
-    /* Adjust the modal styles */
-    .modal-backdrop {
-        /* ... (existing styles) ... */
-    }
-    .modal-content {
-        /* ... (existing styles) ... */
-        color: white; /* Set the text color inside the modal */
     }
     /* Add styles for form labels */
     form label {
