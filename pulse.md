@@ -74,9 +74,6 @@ title: Pulse
         padding: 8px;
         text-align: left;
     }
-    #PulseTable th {
-        background-color: #f2f2f2;
-    }
     /* Add styles for the background */
     body {
         background-color: #FAE5DE; /* Light pink background color */
