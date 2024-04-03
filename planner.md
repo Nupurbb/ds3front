@@ -5,7 +5,7 @@
     <title>Fitness Planner</title>
     <style>
         body {
-            background: linear-gradient(135deg, #ff85a2, #ff007f);
+            background-color: #FAE5DE;
             font-family: 'Segoe UI', sans-serif;
             margin: 0;
             padding: 20px;

@@ -7,7 +7,7 @@
         /* Styles for the whole page */
         body {
             margin: 0 20px; /* 20px margins on the sides */
-            background-color: #fce4ec; /* Pale pink background color */
+            background-color: #FAE5DE; /* Pale pink background color */
             font-family: Arial, sans-serif; /* Set your preferred font */
         }
 /* Styles for the input forms */

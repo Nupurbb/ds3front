@@ -3,48 +3,47 @@ layout: default
 comments: true
 title: Pulse
 ---
-
-<div style="text-align: center; padding: 20px;">
-    <h1 style="color: #ff66cc; font-size: 36px;">Welcome to the Pulse page!</h1>
-    <p style="color: #ff66cc; font-size: 18px;">Here you can store information about your heartrate and how much you exercise!!</p>
+<body>
+<div>
+    <h1>Welcome to the Pulse page!</h1>
+    <p>Here you can store information about your heartrate and how much you exercise!!</p>
 </div>
 
-<div style="display: flex; justify-content: center; margin-bottom: 30px;">
-    <div style="width: 50%; background-color: #ffecf2; padding: 20px; border-radius: 15px;">
-        <h2 style="color: #ff66cc;">Enter your pulse number to see on average how much exercise people do to have that heartrate</h2>
+<div>
+    <div>
+        <h2>Enter your pulse number to see on average how much exercise people do to have that heartrate</h2>
         <form id="formToGetOnePulseDetail">
-            <label for="Pulse" style="color: #ff66cc;">Pulse number to get details:</label><br />
-            <input type="text" id="Pulse" name="Pulse" style="padding: 8px; border-radius: 5px; margin-bottom: 10px;"><br />
-            <button type="submit" value="btnToGetPulseDetail" id="get_pulsey" style="background-color: #ff66cc; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+            <label for="Pulse">Pulse number to get details:</label><br />
+            <input type="text" id="Pulse" name="Pulse"><br />
+            <button type="submit" value="btnToGetPulseDetail" id="get_pulsey">Submit</button>
         </form>
     </div>
 </div>
 
-<div style="display: flex; justify-content: center;">
-    <div style="width: 50%; background-color: #ffecf2; padding: 20px; border-radius: 15px;">
-        <h2 style="color: #ff66cc;">Add a new pulse number</h2>
+<div>
+    <div>
+        <h2>Add a new pulse number</h2>
         <form id="myForm">
-            <label for="Pulse" style="color: #ff66cc;">What is your pulse rate now?</label><br />
-            <input type="text" id="Pulse" name="Pulse" style="padding: 8px; border-radius: 5px; margin-bottom: 10px;"><br />
-            <label for="Exercise" style="color: #ff66cc;">What level of exercise did you just do? - 1 for none, 2 for mild, 3 for extreme</label><br />
-            <input type="text" id="Exercise" name="Exercise" style="padding: 8px; border-radius: 5px; margin-bottom: 10px;"><br />
-            <button type="submit" value="Submit" id="create_pulsey" style="background-color: #ff66cc; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+            <label for="Pulse">What is your pulse rate now?</label><br />
+            <input type="text" id="Pulse" name="Pulse"><br />
+            <label for="Exercise">What level of exercise did you just do? - 1 for none, 2 for mild, 3 for extreme</label><br />
+            <input type="text" id="Exercise" name="Exercise"><br />
+            <button type="submit" value="Submit" id="create_pulsey" >Submit</button>
         </form>
     </div>
 </div>
 
-<div style="text-align: center; margin-top: 30px;">
-    <h2 style="color: #ff66cc;">Pulse Data from all users</h2>
-    <table id="PulseTable" style="border-collapse: collapse; width: 80%; margin: 0 auto;">
+<div>
+    <h2>Pulse Data from all users</h2>
+    <table id="PulseTable">
         <thead>
             <tr>
-                <th style="background-color: #ff66cc; color: white; padding: 10px;">Pulse Number</th>
-                <th style="background-color: #ff66cc; color: white; padding: 10px;">Exercise</th>
-                <th style="background-color: #ff66cc; color: white; padding: 10px;">Edit</th>
-                <th style="background-color: #ff66cc; color: white; padding: 10px;">Delete</th>
+                <th>Pulse Number</th>
+                <th>Exercise</th>
+                <th>Edit</th>
+                <th>Delete</th>
             </tr>
         </thead>
-        <tbody></tbody>
     </table>
 </div>
 
@@ -52,14 +51,15 @@ title: Pulse
 	<div id="editModal" class="modal-content">
 		<button id="closeModal" class="close-modal">X</button>
 		<form id="editForm">
-			<label for="editActive" style="color: #ff66cc;">Pulse Number</label><br />
-			<input type="text" id="editActive" name="editActive" style="padding: 8px; border-radius: 5px; margin-bottom: 10px;"><br />
-            <label for="editExercise" style="color: #ff66cc;">Exercise</label><br />
-			<input type="text" id="editExercise" name="editExercise" style="padding: 8px; border-radius: 5px; margin-bottom: 10px;"><br />
-			<input type="submit" value="Update" style="background-color: #ff66cc; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">
+			<label for="editActive";">Pulse Number</label><br />
+			<input type="text" id="editActive" name="editActive"><br />
+            <label for="editExercise";">Exercise</label><br />
+			<input type="text" id="editExercise" name="editExercise"><br />
+			<input type="submit" value="Update">
 		</form>
 	</div>
 </div>
+</body>
 
 <style>
     /* ... (existing styles) ... */
@@ -79,8 +79,9 @@ title: Pulse
     }
     /* Add styles for the background */
     body {
-        background-color: #ffe6f2; /* Light pink background color */
+        background-color: #FAE5DE; /* Light pink background color */
         font-family: Arial, sans-serif; /* Set your preferred font */
+        text-align: center
     }
     /* Adjust the modal styles */
     .modal-backdrop {

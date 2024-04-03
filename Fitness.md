@@ -55,12 +55,11 @@ title: Fitness
         border-radius: 3px;
         cursor: pointer;
     }
-</style>
-
-
-
-
-<style>
+    body {
+        background-color: #FAE5DE;
+        font-family: 'Arial', sans-serif;
+        margin: 20px;
+    }
 	.modal-backdrop {
 		display: none;
 		position: fixed;
@@ -99,7 +98,7 @@ title: Fitness
 	}
 </style>
 
-
+<body>
 <h3>Get info on an Exercise</h3>
 <form id="formToGetOneExerciseDetail">
     <label for="Exercise"><b>Exercise name to get details:</b></label>
@@ -144,10 +143,7 @@ title: Fitness
         </form>
     </div>
 </div>
-
-<style>
-    /* ... (existing styles) ... */
-</style>
+<body>
 
 <script type="module">
      import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
