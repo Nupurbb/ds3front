@@ -103,49 +103,6 @@ title: Drink
     }
 </style>
 
-
-
-
-<style>
-	.modal-backdrop {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.7);
-		z-index: 1;
-	}
-
-	.modal-content {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background: #272726;
-		padding: 40px;
-		z-index: 2;
-	}
-
-	.close-modal {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		cursor: pointer;
-		background: none;
-		border: none;
-		font-size: 24px;
-		color: white;
-	}
-
-	.wrapper,
-	section {
-		max-width: 900px;
-	}
-</style>
-
-
 <script type="module">
     import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
 
