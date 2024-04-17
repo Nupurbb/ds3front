@@ -16,7 +16,7 @@ permalink: /dailyAgenda
             const heading = document.createElement('h2');
             heading.textContent = day;
             dayDiv.appendChild(heading);
-            ['Morning', 'Noon', 'Afternoon'].forEach((timePeriod) => {
+            ['Morning', 'Afteroon', 'Night'].forEach((timePeriod) => {
                 const timePeriodDiv = document.createElement('div');
                 timePeriodDiv.classList.add('time-period');
                 const label = document.createElement('label');

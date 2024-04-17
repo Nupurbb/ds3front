@@ -3,7 +3,7 @@ layout: default
 title: Login
 ---
 # Login Page
-<html lang="en">
+<html lang="en" class="container" id="animation">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
