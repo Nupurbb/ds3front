@@ -16,7 +16,7 @@ permalink: /recipe
 </style>
 
 <body>
-    <h1>Dessert Recipe Recommender</h1>
+    <h1>Recipe Recommender</h1>
     <label for="ingredients">Select ingredients:</label><br>
     <input type="checkbox" id="strawberry" name="ingredient" value="strawberry">
     <label for="strawberry"> Strawberry</label><br>
@@ -35,14 +35,14 @@ permalink: /recipe
 
 <script>
     const recipes = [
-        { name: "Strawberry Shortcake", ingredients: ["strawberry", "vanilla"] },
-        { name: "Chocolate Brownies", ingredients: ["chocolate"] },
-        { name: "Vanilla Cupcakes", ingredients: ["vanilla"] },
-        { name: "Lemon Bars", ingredients: ["lemon"] },
-        { name: "Apple Pie", ingredients: ["apple"] },
-        { name: "Chocolate Covered Strawberries", ingredients: ["chocolate", "strawberry"] },
-        { name: "Lemon Meringue Pie", ingredients: ["lemon"] }
-    ];
+            { name: "Strawberry Yogurt Parfait", ingredients: ["strawberry", "vanilla"] },
+            { name: "Chocolate Banana Smoothie", ingredients: ["chocolate"] },
+            { name: "Vanilla Chia Seed Pudding", ingredients: ["vanilla"] },
+            { name: "Lemon Poppy Seed Muffins", ingredients: ["lemon"] },
+            { name: "Apple Cinnamon Oatmeal Cookies", ingredients: ["apple"] },
+            { name: "Chocolate Covered Strawberries", ingredients: ["chocolate", "strawberry"] },
+            { name: "Lemon Blueberry Greek Yogurt Bark", ingredients: ["lemon"] }
+        ];
 function recommend() {
     const selectedIngredients = Array.from(document.querySelectorAll('input[name="ingredient"]:checked')).map(checkbox => checkbox.value);
     const recommendedRecipes = recipes.filter(recipe => selectedIngredients.every(ingredient => recipe.ingredients.includes(ingredient)));
