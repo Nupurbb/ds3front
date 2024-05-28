@@ -67,7 +67,7 @@ title: Drink
     /* Add styles for the background */
     body {
         background-color: #e0e0e0; /* Set your desired background color */
-        font-family: Comic Sans MS, cursive; /* Set your preferred font */
+        font-family: Comic, cursive; /* Set your preferred font */
     }
     /* Adjust the modal styles */
     .modal-backdrop {
@@ -238,6 +238,7 @@ title: Drink
             headers: {
                 "Content-Type": "application/json",
             },
+            
             body: JSON.stringify(payload),
         })
         .then((response) => {
