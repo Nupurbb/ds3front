@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Filter</title>
     <style>
+    body {
+    background-color: #fae5de;
+    }
+    body {
+        background-color: #FAE5DE;
+        font-family: 'Arial', sans-serif;
+        margin: 20px;
+    }
+</style>
+
+<style>
         body {
             font-family: Arial, sans-serif;
         }
