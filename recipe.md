@@ -62,20 +62,29 @@ permalink: /recipe
 <script>
     function generateRecipe() {
         const selectedGenre = document.getElementById('genre').value;
-        const apiUrl = `http://127.0.0.1:8086/api/recipe/random?genre=${selectedGenre}`;
+        const apiUrl = `http://127.0.0.1:8086/api/recipe/searchbygenre?genre=${selectedGenre}`;
         
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
-                const recipe = data.recipe;
-                const ingredients = data.ingredients;
-                const time = data.time;
-                const type = data.type;
+                if (data.length > 0) {
+                    // Randomly pick one recipe from the results
+                    const randomRecipe = data[Math.floor(Math.random() * data.length)];
 
-                document.getElementById('recipe').textContent = recipe;
-                document.getElementById('ingredients').textContent = ingredients;
-                document.getElementById('time').textContent = time;
-                document.getElementById('type').textContent = type;
+                    const recipe = randomRecipe.recipe;
+                    const ingredients = randomRecipe.ingredients;
+                    const time = randomRecipe.time;
+                    const type = randomRecipe.type;
+
+                    document.getElementById('recipe').textContent = recipe;
+                    document.getElementById('ingredients').textContent = ingredients;
+                    document.getElementById('time').textContent = time;
+                    document.getElementById('type').textContent = type;
+                } else {
+                    const errorMessage = document.createElement('div');
+                    errorMessage.textContent = 'No recipes found for the selected genre.';
+                    document.getElementById('table-container').appendChild(errorMessage);
+                }
             })
             .catch(error => {
                 const errorMessage = document.createElement('div');
